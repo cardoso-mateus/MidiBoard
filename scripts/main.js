@@ -1,27 +1,13 @@
-var teclas = [
-    '.tecla_pom', '.tecla_clap', '.tecla_tim',
-    '.tecla_puff', '.tecla_splash', '.tecla_toim',
-    '.tecla_psh', '.tecla_tic', '.tecla_tom']
+const teclas = document.querySelectorAll('.tecla');
 
-var audios = [
-    '#som_tecla_pom', '#som_tecla_clap', '#som_tecla_tim',
-    '#som_tecla_puff', '#som_tecla_splash', '#som_tecla_toim',
-    '#som_tecla_psh', '#som_tecla_tic', '#som_tecla_tom']
-
-function seletor(texto) {return document.querySelector(texto);}
+function audio(texto) {return document.querySelector(texto).play();}
 
 function criaTecla(i) {
-    seletor(teclas[i]).addEventListener('click', function() {
-        seletor(audios[i]).play();
+    teclas[i].addEventListener('click', function() {
+        audio(`#som_${teclas[i].classList[1]}`);
     });
 }
 
-var tecla_pom = criaTecla(0);
-var tecla_clap = criaTecla(1);
-var tecla_tim = criaTecla(2);
-var tecla_puff = criaTecla(3);
-var tecla_splash = criaTecla(4);
-var tecla_toim = criaTecla(5);
-var tecla_psh = criaTecla(6);
-var tecla_tic = criaTecla(7);
-var tecla_tom = criaTecla(8);
+for(let i = 0; i < teclas.length; i++) {
+    criaTecla(i);
+}
