@@ -22,47 +22,16 @@ var audios = [
     document.querySelector('#som_tecla_tom'),
 ]
 
-var tecla_pom = teclas[0];
-tecla_pom.addEventListener('click', function() {
-    audios[0].play();
-});
+function criaTecla(i) {
+    teclas[i].addEventListener('click', function() {audios[i].play();});
+}
 
-var tecla_pom = teclas[1];
-tecla_pom.addEventListener('click', function() {
-    audios[1].play();
-});
-
-var tecla_pom = teclas[2];
-tecla_pom.addEventListener('click', function() {
-    audios[2].play();
-});
-
-var tecla_pom = teclas[3];
-tecla_pom.addEventListener('click', function() {
-    audios[3].play();
-});
-
-var tecla_pom = teclas[4];
-tecla_pom.addEventListener('click', function() {
-    audios[4].play();
-});
-
-var tecla_pom = teclas[5];
-tecla_pom.addEventListener('click', function() {
-    audios[5].play();
-});
-
-var tecla_pom = teclas[6];
-tecla_pom.addEventListener('click', function() {
-    audios[6].play();
-});
-
-var tecla_pom = teclas[7];
-tecla_pom.addEventListener('click', function() {
-    audios[7].play();
-});
-
-var tecla_pom = teclas[8];
-tecla_pom.addEventListener('click', function() {
-    audios[8].play();
-});
+var tecla_pom = criaTecla(0);
+var tecla_clap = criaTecla(1);
+var tecla_tim = criaTecla(2);
+var tecla_puff = criaTecla(3);
+var tecla_splash = criaTecla(4);
+var tecla_toim = criaTecla(5);
+var tecla_psh = criaTecla(6);
+var tecla_tic = criaTecla(7);
+var tecla_tom = criaTecla(8);
