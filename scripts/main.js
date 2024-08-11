@@ -1,7 +1,7 @@
 const teclas = document.querySelectorAll('.tecla');
 
 function audio(texto) {
-    return document.querySelector(texto).play();
+    document.querySelector(texto).play();
 }
 
 for (let i = 0; i < teclas.length; i++) {
@@ -10,7 +10,7 @@ for (let i = 0; i < teclas.length; i++) {
     });
 
     teclas[i].addEventListener('keydown', function (evento) {
-        if (evento.code == 'Enter'|| evento.code == 'Enter') {
+        if (evento.code === 'Enter'|| evento.code === 'Enter') {
             teclas[i].classList.add('ativa');
         }
     });
