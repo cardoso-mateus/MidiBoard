@@ -22,9 +22,11 @@ var audios = [
     '#som_tecla_tom',
 ]
 
+function seletor(texto) {return document.querySelector(texto);}
+
 function criaTecla(i) {
-    document.querySelector(teclas[i]).addEventListener('click', function() {
-        document.querySelector(audios[i]).play();
+    seletor(teclas[i]).addEventListener('click', function() {
+        seletor(audios[i]).play();
     });
 }
 
