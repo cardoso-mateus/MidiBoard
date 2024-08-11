@@ -26,34 +26,42 @@ var tecla_pom = teclas[0];
 tecla_pom.addEventListener('click', function() {
     audios[0].play();
 });
+
 var tecla_pom = teclas[1];
 tecla_pom.addEventListener('click', function() {
     audios[1].play();
 });
+
 var tecla_pom = teclas[2];
 tecla_pom.addEventListener('click', function() {
     audios[2].play();
 });
+
 var tecla_pom = teclas[3];
 tecla_pom.addEventListener('click', function() {
     audios[3].play();
 });
+
 var tecla_pom = teclas[4];
 tecla_pom.addEventListener('click', function() {
     audios[4].play();
 });
+
 var tecla_pom = teclas[5];
 tecla_pom.addEventListener('click', function() {
     audios[5].play();
 });
+
 var tecla_pom = teclas[6];
 tecla_pom.addEventListener('click', function() {
     audios[6].play();
 });
+
 var tecla_pom = teclas[7];
 tecla_pom.addEventListener('click', function() {
     audios[7].play();
 });
+
 var tecla_pom = teclas[8];
 tecla_pom.addEventListener('click', function() {
     audios[8].play();
