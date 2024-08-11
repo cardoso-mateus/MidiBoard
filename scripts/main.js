@@ -1,29 +1,14 @@
-var teclas = [
-    document.querySelector('.tecla_pom'),
-    document.querySelector('.tecla_clap'),
-    document.querySelector('.tecla_tim'),
-    document.querySelector('.tecla_puff'),
-    document.querySelector('.tecla_splash'),
-    document.querySelector('.tecla_toim'),
-    document.querySelector('.tecla_psh'),
-    document.querySelector('.tecla_tic'),
-    document.querySelector('.tecla_tom'),
-]
+var teclas = ['.tecla_pom','.tecla_clap','.tecla_tim','.tecla_puff',
+    '.tecla_splash','.tecla_toim','.tecla_psh','.tecla_tic','.tecla_tom',]
 
-var audios = [
-    document.querySelector('#som_tecla_pom'),
-    document.querySelector('#som_tecla_clap'),
-    document.querySelector('#som_tecla_tim'),
-    document.querySelector('#som_tecla_puff'),
-    document.querySelector('#som_tecla_splash'),
-    document.querySelector('#som_tecla_toim'),
-    document.querySelector('#som_tecla_psh'),
-    document.querySelector('#som_tecla_tic'),
-    document.querySelector('#som_tecla_tom'),
-]
+var audios = ['#som_tecla_pom','#som_tecla_clap','#som_tecla_tim','#som_tecla_puff',
+    '#som_tecla_splash','#som_tecla_toim','#som_tecla_psh','#som_tecla_tic','#som_tecla_tom',]
 
 function criaTecla(i) {
-    teclas[i].addEventListener('click', function() {audios[i].play();});
+    document.querySelector(teclas[i])
+    .addEventListener('click', function() {
+        document.querySelector(audios[i]).play();
+    });
 }
 
 var tecla_pom = criaTecla(0);
